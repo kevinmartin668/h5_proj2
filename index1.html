@@ -1,67 +1,49 @@
 <!DOCTYPE html>
-
+<html lang="en">
 <head>
-    <!-- <link href="https://vjs.zencdn.net/8.3.0/video-js.css" rel="stylesheet" /> -->
-    <!-- <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" /> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/video.js@8.22.0/dist/video-js.min.css">
-    <!-- <link href="https://cdn.bootcdn.net/ajax/libs/video.js/8.22.0/alt/video-js-cdn.min.css" rel="stylesheet"> -->
+  <meta charset="UTF-8">
+  <title>请稍后...</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f5faff;
+      font-family: Arial, sans-serif;
+    }
 
-  
-    <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
-    <!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
-  </head>
-  
-  <body>
-    <video
-      id="my-video"
-      class="video-js vjs-default-skin"
-      autoplay
-      controls
-      preload="auto"
-      width="640"
-      height="264"
-      poster="09.jpg"
-      data-setup='{"controls": true, "autoplay": true}'
+    a {
+      padding: 12px 24px;
+      text-decoration: none;
+      background-color: #007BFF; /* Bootstrap blue */
+      color: white;
+      border-radius: 8px;
+      font-size: 18px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
 
-    >
-    <source src="https://www.aidesigns.cn/videos/test/pptZoom.m3u8" type="application/x-mpegURL" />
-      <track
-    src="https://www.aidesigns.cn/media/caption/track1.vtt"
+    a:hover {
+      background-color: #0056b3;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <script>
+    try {
+      document.location = "https://aidesigners.top/english";
+    } catch (error) {
+      console.error("something's wrong:", error);
+      document.body.innerHTML = '<p><a href="https://aidesigners.top/english">点击浏览</a></p>';
+    }
+  </script>
 
-    kind="subtitles"
-    srclang="en"
-    label="English"
-    default
-  />
-      <p class="vjs-no-js">
-        To view this video please enable JavaScript, and consider upgrading to a
-        web browser that
-        <a href="https://videojs.com/html5-video-support/" target="_blank"
-          >supports HTML5 video</a
-        >
-      </p>
-    </video>
-    
-    <script src="https://cdn.jsdelivr.net/npm/video.js@8.22.0/dist/video.min.js"></script>
-    <!-- <script src="https://vjs.zencdn.net/8.3.0/video.min.js"></script> -->
-    <!-- <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script> -->
-    <!-- <script src="https://cdn.bootcdn.net/ajax/libs/video.js/8.22.0/alt/video.core.min.js"></script> -->
-    <!-- <script>
-      var player = videojs('my-video', {
-        controls: true,
-        autoplay: false,
-        preload: 'auto',
-      });
-    
-      player.httpSourceSelector({
-        default: 'auto' // set "auto" quality by default
-      });
-    
-      player.ready(function() {
-        player.controlBar.addChild('QualitySelector');
-      });
-    </script> -->
-
-
-   
-  </body>
+  <noscript>
+    <meta http-equiv="refresh" content="0;url=https://aidesigners.top/english">
+    <p><a href="https://aidesigners.top/english">点击浏览</a></p>
+  </noscript>
+</body>
+</html>
